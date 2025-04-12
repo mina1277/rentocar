@@ -1,71 +1,63 @@
 <!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/login_register.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </head>
+<head>
+<meta charset="utf-8">
+<title>login or register</title>
+<link rel="stylesheet" href="css/login_register.css">
+<link rel="shortcut icon" href="img/logo.png"/>
+</head>
+
+<body style="font-family: 'B Nazanin'">
 	
-	
-    <body style="background-color: #706D54;font-family: 'B Nazanin'">
-        <div class ="row" style="background-color: #706D54">
-            <div class="col-md-6 mx-auto ">
-                <div class="card" style="background-color: #706D54 ;border-radius: 30px">
-        <div class="login-box" style="background-color: #706D54; border-radius: 30px" >
-            <div class="login-snip " style="background-color:#3C3D37;border: 4px solid #697565; border-radius: 30px; box-shadow: 5px 5px 16px rgba(0,0,0,1.5)">
-                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab" style="text-align: right">ورود</label>
-                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab" style="">ثبت نام</label>
-                <div class="login-space">
-                    <div class="login">
-                        <div class="group">
-                            <label for="user" class="label" style="text-align: right">نام کاربری</label>
-                            <input id="user" type="text" class="input"  >
-                        </div>
-                        <div class="group">
-                            <label  class="label" style="text-align: right">رمز عبور</label>
-                            <input id="pass" type="password" class="input" data-type="password" >
-                        </div>
-                        <div class="group" dir="rtl">
-                            <input id="check" type="checkbox" class="check" dir="rtl" checked>
-                            <label for="check" style="text-align:right" dir="rtl"><span class="icon"></span> مرا بخاطر بسپار  </label>
-                        </div>
-                        <div class="group">
-                            <input type="submit" class="button" value="ورود">
-                        </div>
-                        <div class="hr"></div>
-                        <div class="foot">
-                            <a href="#">رمز عبور را فراموش کرده اید؟</a>
-                        </div>
-                    </div>
-                    <div class="sign-up-form">
-                        <div class="group">
-                            <label for="user" class="label" style="text-align: right">نام کاربری</label>
-                            <input type="text" id="username"  class="input" >
-                        </div>
-                        <div class="group">
-                            <label class="label" style="text-align: right">رمز عبور</label>
-                            <input type="password" class="input" id="pas"  >
-                        </div>
-                        <div class="group">
-                            <label  class="label" style="text-align: right">تکرار رمز عبور</label>
-                            <input type="password" class="input" id="rpass" data-type="password" >
-                        </div>
-                        <div class="group">
-                            <label  class="label" style="text-align: right">شماره تماس</label>
-                            <input id="num" type="text" class="input" placeholder="09 ..."><br>
-                        </div>
-                        <div class="group">
-                            <input type="submit" class="button" value="ثبت نام">
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-        </div>   
-        </div>
-        </div>
-        </div>
-        <br><br>
-    </body>
+<div class ="row" >
+<div class="login-box">
+	<div class="login-snip">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">ورود</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">ثبت نام</label>
+		<div class="login-space">
+			<div class="login">
+				<div class="group">
+					<form>
+					<br><br><br>
+					<label for="user" class="label"> نام کاربری: </label><br>
+					<input id="user" type="text" class="input"  placeholder=""><br>
+				
+					<label for="password" class="label">رمز عبور:</label><br>
+					<input id="password" type="password" class="input" data-type="password" placeholder=""><br>
+				
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> مرا بخاطر بسپار</label><br><br><br>
+				
+					<input type="submit" class="button" value="ورود">
+					</form>
+				</div>
+				
+			</div>
+			<div class="sign-up-form">
+				<div class="group">
+					<form>
+					<br><label for="user" class="label">نام کاربری:</label>
+					<input id="username" type="text" class="input"><br>
+				
+					<label for="pass" class="label">رمز عبور:</label>
+					<input id="pass" type="password" class="input" data-type="password"><br>
+				
+					<label for="pass" class="label">تکرار رمز عبور:</label>
+					<input id="rpass" type="password" class="input" data-type="password"><br>
+				
+					<label for="pass" class="label">شماره همراه:</label>
+					<input id="pas" type="text" class="input" placeholder="09120000000"><br><br>
+				
+					<input type="submit" class="button" value="ثبت نام"><br>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</div>   
+</div>
+</div>
+
+
+</body>
 </html>
