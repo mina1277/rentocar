@@ -1,8 +1,10 @@
 body{
 	margin:0;
-	color:#6a6f8c;
-	background:#706D54;
+	color:gray;
+	background:#DCDCDC;
 	font:600 16px/18px 'Open Sans',sans-serif;
+	justify-content: center;
+	align-items: center;
 }
 
 .login-box{
@@ -11,14 +13,18 @@ body{
 	max-width:525px;
 	min-height:670px;
 	position:relative;
-	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-snip{
 	width:100%;
 	height:100%;
 	position:absolute;
 	padding:90px 70px 50px 70px;
-	background:rgba(0, 77, 77,.9);
+	background:#FFFFFF;
+	text-align: right;
+	direction: rtl;
+	border: 4px solid #D4AF37;
+	border-radius: 30px; 
+	box-shadow: 5px 5px 16px rgba(0,0,0,1.5);
 }
 .login-snip .login,
 .login-snip .sign-up-form{
@@ -51,8 +57,8 @@ body{
 }
 .login-snip .sign-in:checked + .tab,
 .login-snip .sign-up:checked + .tab{
-	color:#fff;
-	border-color: #697565;
+	color:black;
+	border-color:#D4AF37;
 }
 .login-space{
 	min-height:345px;
@@ -67,14 +73,16 @@ body{
 .login-space .group .input,
 .login-space .group .button{
 	width:100%;
-	color:#fff;
+	color:#000000;
 	display:block;
+	font-size:19px;
 }
 .login-space .group .input,
 .login-space .group .button{
 	border:none;
 	padding:15px 20px;
 	border-radius:25px;
+	border: 2px solid #D4AF37;
 	background:rgba(255,255,255,.1);
 }
 .login-space .group input[data-type="password"]{
@@ -82,11 +90,13 @@ body{
 	-webkit-text-security:circle;
 }
 .login-space .group .label{
-	color:#ACACAC;
-	font-size:12px;
+	color:black;
+	font-size:16px;
 }
 .login-space .group .button{
-	background:#697565;
+	background:#1E3A8A;
+	border: 1px solid #000000;
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 .login-space .group label .icon{
 	width:15px;
@@ -117,7 +127,7 @@ body{
 	transform:scale(0) rotate(0);
 }
 .login-space .group .check:checked + label{
-	color:#fff;
+	color:black;
 }
 .login-space .group .check:checked + label .icon{
 	background:#1161ee;
@@ -140,7 +150,6 @@ body{
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
 
-
 .hr{
 	height:2px;
 	margin:60px 0 50px 0;
@@ -148,10 +157,6 @@ a{color:inherit;text-decoration:none}
 }
 .foot{
 	text-align:center;
-}
-.card{
-	width: 500px;
-	left: 100px;
 }
 
 ::placeholder{

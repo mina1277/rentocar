@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+body{background:#fff;
+	font-family: 'Roboto Condensed', sans-serif}
+.carousel-item{width: 100%}
+.price span{font-size: 18px}
+.cut{text-decoration: line-through;color: red}
+.icons i{font-size: 17px;color: #D4AF37;margin-right: 2px}
+.offers i{color: #1E3A8A}
+
