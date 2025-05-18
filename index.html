@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="img/logo.png"/>
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/command.css">
+	<link rel="stylesheet" href="css/a.css">
 </head>
 
 <body style="background-color: #f9fafb;font-family: 'B Nazanin'" dir="rtl">
@@ -72,7 +73,24 @@
   </a>
 </div>
 </div>
+<br><br><br>
+<div class="filter-box" style="justify-content: center;display: flex;align-items: center">
+	<select id="brand">
+    <option value="">برند</option>
+    <option value="بنز">بنز</option>
+    <option value="بی‌ام‌و">بی‌ام‌و</option>
+  </select>
 
+  <select id="gearbox">
+    <option value="">گیربکس</option>
+    <option value="اتومات">اتومات</option>
+    <option value="دنده‌ای">دنده‌ای</option>
+  </select>
+
+  <input type="number" id="price" placeholder="حداکثر قیمت روزانه">
+
+  <button onclick="submitSearch()">جست‌وجو</button>
+</div>
 <br><br><br>
 	<h3 style="text-align: center;font-size: 20px;font-weight: bold">اجاره ماشین در قم با رزرو آنلاین</h3>
 	
@@ -505,3 +523,20 @@ function showAlert() {
 
 
 
+
+ <script>
+	 
+
+    function submitSearch() {
+      const brand = document.getElementById("brand").value;
+      const gearbox = document.getElementById("gearbox").value;
+      const price = document.getElementById("price").value;
+
+      // ذخیره داده در localStorage برای انتقال به صفحه دوم
+      const filters = { brand, gearbox, price };
+      localStorage.setItem("carFilters", JSON.stringify(filters));
+
+      // انتقال به صفحه نتایج
+      window.location.href = "results.html";
+    }
+  </script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>نتایج جست‌وجو</title>
+  <style>
+    .car-list { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 20px; }
+    .car-card { border: 1px solid #ccc; padding: 12px; border-radius: 8px; width: 200px; }
+    .car-card img { width: 100%; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h2>نتایج جست‌وجو</h2>
+  <div id="car-results" class="car-list"></div>
+
+  <script>
+    const cars = [
+      { brand: "بنز", gearbox: "اتومات", price: 900000, image: "img/product/article_638259672794427574.jpg" },
+      { brand: "بی‌ام‌و", gearbox: "دنده‌ای", price: 700000, image: "img/product/article_638259672794427574.jpg" },
+    ];
+
+    const filters = JSON.parse(localStorage.getItem("carFilters"));
+
+    const filtered = cars.filter(car => {
+      return (!filters.brand || car.brand === filters.brand) &&
+             (!filters.gearbox || car.gearbox === filters.gearbox) &&
+             (!filters.price || car.price <= filters.price);
+    });
+
+    const results = document.getElementById("car-results");
+
+    if (filtered.length === 0) {
+      results.innerHTML = "<p>هیچ خودرویی پیدا نشد.</p>";
+    } else {
+      filtered.forEach(car => {
+        const div = document.createElement("div");
+        div.className = "car-card";
+        div.innerHTML = 
+          <img src="${car.image}" alt="${car.brand}">
+          <h4>${car.brand}</h4>
+          <p>گیربکس: ${car.gearbox}</p>
+          <p>قیمت: ${car.price.toLocaleString()} تومان</p>
+        ;
+        results.appendChild(div);
+      });
+    }
+  </script>
+</body>
+</html>
