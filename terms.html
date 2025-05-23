@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>قوانین و مقررات اجاره خودرو</title>
+  <link rel="stylesheet" href="css/terms.css">
+</head>
+<body>
+  <div class="container">
+    <h1>قوانین و مقررات</h1>
+    <p>.لطفاً قبل از اجاره خودرو، قوانین و شرایط را به دقت مطالعه کنید</p>
+
+    <div class="rule">
+      <h2>📌 شرایط اجاره خودرو</h2>
+      <p>.اجاره خودرو تنها به افراد بالای 21 سال با گواهینامه معتبر انجام می‌شود</p>
+    </div>
+
+    <div class="rule">
+      <h2>📌 مدارک لازم</h2>
+      <p>.ارائه کارت ملی و گواهینامه رانندگی الزامی است</p>
+    </div>
+
+    <div class="rule">
+      <h2>📌 شرایط کنسلی</h2>
+      <p>.در صورت کنسلی 48 ساعت قبل از موعد، 80٪ مبلغ بازگردانده می‌شود</p>
+    </div>
+
+    <!-- گزینه قبول قوانین -->
+    <div class="checkbox-container">
+      <input type="checkbox" id="acceptRules">
+      <label for="acceptRules">قوانین را می‌پذیرم</label>
+    </div>
+
+    <!-- دکمه تایید که غیرفعال می‌شود -->
+    <button id="nextBtn" disabled>ادامه</button>
+  </div>
+<script>
+  document.getElementById("acceptRules").addEventListener("change", function() {
+  const nextBtn = document.getElementById("nextBtn");
+
+  if (this.checked) {
+    nextBtn.disabled = false;
+    nextBtn.classList.add("active");
+    nextBtn.onclick = () => window.location.href = "reserve.html"; // صفحه بعدی
+  } else {
+    nextBtn.disabled = true;
+    nextBtn.classList.remove("active");
+  }
+});
+</script>
+</body>
+</html>
+

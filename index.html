@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -5,14 +6,18 @@
 	<title>index</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-	
 	<link rel="shortcut icon" href="img/logo.png"/>
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/command.css">
 </head>
 
 <body style="background-color: #f9fafb;font-family: 'B Nazanin'" dir="rtl">
+ <div id="loading">
+        <div class="spinner"></div>
+    </div>
 
+    <div id="content" style="display: none;">
+    </div>
 
 <header class="p-3  text-white text-end" style="background-color: #1E3A8A;color: white;font-size: 20px">
   <div class="container">
@@ -35,7 +40,7 @@
       <div class="text-start">
 	
        <a href="login_register.html"><button type="button" class="btn btn-outline-light me-2"  style="border-color: #D4AF37;border-radius: 8px;border:2px solid #D4AF37">ثبت نام/ورود</button></a>
-       <a href="user-account.html"><img src="img/user_username_people_account_avatar_profile_person_icon_258962.png"></a> 
+       <a href="user-account.html"><img src="img/user_username_people_account_avatar_profile_person_icon_258962 .png"></a> 
       </div>
     </div>
   </div>
@@ -72,8 +77,9 @@
   </a>
 </div>
 </div>
-
 <br><br><br>
+ <button id="scrollTopBtn">↑</button>
+
 	<h3 style="text-align: center;font-size: 20px;font-weight: bold">اجاره ماشین در قم با رزرو آنلاین</h3>
 	
 	<h5 style="text-align: center;color: #1e3a8a;font-weight: bold">_____________________________________</h5>
@@ -112,17 +118,15 @@
       </div>
       <hr class="mt-2 mx-3">
       <div class="d-flex flex-row justify-content-between px-3 pb-4">
-        <div class="d-flex flex-column"><span class="text-muted" style="font-size: 20px"> شروع قیمت :</span><img src="img/icons8-man-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">5 نفره</h5><img src="img/icons8-tick-mark-51.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">بیمه و تحویل رایگان</h5>
+        <div class="d-flex flex-column"><span class="text-muted" style="font-size: 20px"> شروع قیمت :</span><img src="img/icons8-man-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">5 نفره</h5>
 		<a href="#" ><img class="imageButton" src="img/icons8-like-50.png" width="25px" height="25px"  style="margin-top: 15px" onClick="showAlert()"></a><h5 class="mb-0">افزودن به علاقمندی</h5></div>
 		 
-        <div class="d-flex flex-column"><h5 class="mb-0">1.450.000</h5> <img src="img/icons8-gas-station-50.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">بنزین</h5><img src="img/icons8-gearbox-32.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">دنده ای</h5><img src="img/icons8-color-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">سفید</h5></div>
+        <div class="d-flex flex-column"><h5 class="mb-0">1.450.000</h5> <img src="img/icons8-gearbox-32.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">دنده ای</h5><img src="img/icons8-color-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">سفید</h5></div>
       </div>
-      <div class="d-flex flex-row justify-content-between p-3 mid">
-        
-        <div class="d-flex flex-column"><small class="text-muted mb-2"  style="font-size: 20px">تردد مجاز</small><div class="d-flex flex-row"><img src="https://imgur.com/J11mEBq.png"><h6 class="ml-1">300کیلومتر</h6></div></div>
-      </div>
+     
       
-      <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><a href="206.html"><button  type="button" class="btn btn-danger btn-block" style="width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin' ;font-weight: bold"><small>رزرو</small></button></a></div>
+      <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><a href="206.html"><button  type="button" class="btn btn-danger btn-block" style="border:#d4af37;width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin' ;font-weight: bold"><small>رزرو</small></button></a></div>
+
     </div>
   </div>
     </div>
@@ -138,17 +142,15 @@
       </div>
       <hr class="mt-2 mx-3">
       <div class="d-flex flex-row justify-content-between px-3 pb-4">
-        <div class="d-flex flex-column"><span class="text-muted" style="font-size: 20px">شروع قیمت :</span><img src="img/icons8-man-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">5 نفره</h5><img src="img/icons8-tick-mark-51.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">بیمه و تحویل رایگان</h5>
+        <div class="d-flex flex-column"><span class="text-muted" style="font-size: 20px">شروع قیمت :</span><img src="img/icons8-man-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">5 نفره</h5>
 			<a href="#" ><img class="imageButton" src="img/icons8-like-50.png" width="25px" height="25px"  style="margin-top: 15px" onClick="showAlert()"></a><h5 class="mb-0">افزودن به علاقمندی</h5></div>
 		 
-        <div class="d-flex flex-column"><h5 class="mb-0">8.550.000</h5> <img src="img/icons8-gas-station-50.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">بنزین</h5><img src="img/icons8-gearbox-32.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">اتومات</h5><img src="img/icons8-color-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">آبی</h5></div>
-      </div>
-      <div class="d-flex flex-row justify-content-between p-3 mid">
-        
-        <div class="d-flex flex-column"><small class="text-muted mb-2"  style="font-size: 20px">تردد مجاز</small><div class="d-flex flex-row"><img src="https://imgur.com/J11mEBq.png"><h6 class="ml-1">200کیلومتر</h6></div></div>
+        <div class="d-flex flex-column"><h5 class="mb-0">8.550.000</h5> <img src="img/icons8-gearbox-32.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">اتومات</h5><img src="img/icons8-color-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">آبی</h5></div>
       </div>
       
-      <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><a href="tigoo.html"><button type="button" class="btn btn-danger btn-block" style="width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin';font-weight: bold "><small>رزرو</small></button></a></div>
+       
+      
+      <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><a href="tigoo.html"><button type="button" class="btn btn-danger btn-block" style="border: #d4af37; width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin';font-weight: bold "><small>رزرو</small></button></a></div>
     </div>
   </div>
     </div>
@@ -166,14 +168,9 @@
         <div class="d-flex flex-column"><span class="text-muted" style="font-size: 20px">شروع قیمت :</span>
 		<img src="img/icons8-man-30.png" width="25px" height="25px"  style="margin-top: 15px">
 			<h5 class="mb-0">5 نفره</h5>
-			<img src="img/icons8-tick-mark-51.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">بیمه و تحویل رایگان</h5>
 			<a href="#" ><img class="imageButton" src="img/icons8-like-50.png" width="25px" height="25px"  style="margin-top: 15px" onClick="showAlert()"></a><h5 class="mb-0">افزودن به علاقمندی</h5></div>
 		 
-        <div class="d-flex flex-column"><h5 class="mb-0">14.000.000</h5> <img src="img/icons8-gas-station-50.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">بنزین</h5><img src="img/icons8-gearbox-32.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">اتومات</h5><img src="img/icons8-color-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">سفید</h5></div>
-      </div>
-      <div class="d-flex flex-row justify-content-between p-3 mid">
-        
-        <div class="d-flex flex-column"><small class="text-muted mb-2"  style="font-size: 20px">تردد مجاز</small><div class="d-flex flex-row"><img src="https://imgur.com/J11mEBq.png"><h6 class="ml-1">200کیلومتر</h6></div></div>
+        <div class="d-flex flex-column"><h5 class="mb-0">14.000.000</h5> <img src="img/icons8-gearbox-32.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">اتومات</h5><img src="img/icons8-color-30.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">سفید</h5></div>
       </div>
       
     <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><a href="kia5.html"><button type="button" class="btn btn-danger btn-block" style="width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin';font-weight: bold " ><small>رزرو</small></button></a></div>
@@ -196,30 +193,19 @@
               <span class="text-muted" style="font-size: 20px">شروع قیمت :</span>
               <img src="img/icons8-man-30.png" width="25px" height="25px"  style="margin-top: 15px">
               <h5 class="mb-0">5 نفره</h5>
-              <img src="img/icons8-tick-mark-51.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">بیمه و تحویل رایگان</h5>
 				<a href="#" ><img class="imageButton" src="img/icons8-like-50.png" width="25px" height="25px"  style="margin-top: 15px" onClick="showAlert()"></a><h5 class="mb-0">افزودن به علاقمندی</h5>
             </div>
             <div class="d-flex flex-column">
               <h5 class="mb-0">10.000.000</h5>
-              <img src="img/icons8-gas-station-50.png" width="25px" height="25px"  style="margin-top: 15px">
-              <h5 class="mb-0">بنزین</h5>
+             
               <img src="img/icons8-gearbox-32.png" width="25px" height="25px"  style="margin-top: 15px">
               <h5 class="mb-0">اتومات</h5>
               <img src="img/icons8-color-30.png" width="25px" height="25px"  style="margin-top: 15px">
               <h5 class="mb-0">مشکی</h5>
             </div>
           </div>
-          <div class="d-flex flex-row justify-content-between p-3 mid">
-            <div class="d-flex flex-column">
-              <small class="text-muted mb-2"  style="font-size: 20px">تردد مجاز</small>
-              <div class="d-flex flex-row">
-                <img src="https://imgur.com/J11mEBq.png">
-                <h6 class="ml-1">200کیلومتر</h6>
-              </div>
-            </div>
-          </div>
-          
-            <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><button type="button" class="btn btn-danger btn-block" style="width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin' ;font-weight: bold" onClick="alert('در حال حاظر امکان رزرو وجود ندارد!')"><small>رزرو</small></button></div>
+
+            <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><button type="button" class="btn btn-danger btn-block" style=" border: #d4af37; width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin' ;font-weight: bold" onClick="alert('در حال حاظر امکان رزرو وجود ندارد!')"><small>رزرو</small></button></div>
           
         </div>
       </div>
@@ -239,30 +225,17 @@
             <div class="d-flex flex-column">
               <span class="text-muted" style="font-size: 20px">شروع قیمت :</span>
               <img src="img/icons8-man-30.png" width="25px" height="25px"  style="margin-top: 15px">
-              <h5 class="mb-0">5 نفره</h5>
-              <img src="img/icons8-tick-mark-51.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">بیمه وتحویل رایگان</h5>
 				<a href="#" ><img class="imageButton" src="img/icons8-like-50.png" width="25px" height="25px"  style="margin-top: 15px" onClick="showAlert()"></a><h5 class="mb-0">افزودن به علاقمندی</h5>
             </div>
             <div class="d-flex flex-column">
               <h5 class="mb-0">2.000.000</h5>
-              <img src="img/icons8-gas-station-50.png" width="25px" height="25px"  style="margin-top: 15px">
-              <h5 class="mb-0">بنزین</h5>
               <img src="img/icons8-gearbox-32.png" width="25px" height="25px"  style="margin-top: 15px">
               <h5 class="mb-0">اتومات</h5>
               <img src="img/icons8-color-30.png" width="25px" height="25px"  style="margin-top: 15px">
               <h5 class="mb-0">مشکی</h5>
             </div>
           </div>
-          <div class="d-flex flex-row justify-content-between p-3 mid">
-            <div class="d-flex flex-column">
-              <small class="text-muted mb-2" style="font-size: 20px">تردد مجاز</small>
-              <div class="d-flex flex-row">
-                <img src="https://imgur.com/J11mEBq.png">
-                <h6 class="ml-1">300کیلومتر</h6>
-              </div>
-            </div>
-          </div>
-          <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><button type="button" class="btn btn-danger btn-block" style="width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin';font-weight: bold " onClick="alert('در حال حاظر امکان رزرو وجود ندارد!')"><small>رزرو</small></button></div>
+          <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><button type="button" class="btn btn-danger btn-block" style="border: #d4af37;width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin';font-weight: bold " onClick="alert('در حال حاظر امکان رزرو وجود ندارد!')"><small>رزرو</small></button></div>
         </div>
       </div>
 	  </div>
@@ -282,29 +255,17 @@
               <span class="text-muted" style="font-size: 20px">شروع قیمت :</span>
               <img src="img/icons8-man-30.png" width="25px" height="25px"  style="margin-top: 15px">
               <h5 class="mb-0">5 نفره</h5>
-              <img src="img/icons8-tick-mark-51.png" width="25px" height="25px"  style="margin-top: 15px"><h5 class="mb-0">بیمه و تحویل رایگان</h5>
 				<a href="#" ><img class="imageButton" src="img/icons8-like-50.png" width="25px" height="25px"  style="margin-top: 15px" onClick="showAlert()"></a><h5 class="mb-0">افزودن به علاقمندی</h5>
             </div>
             <div class="d-flex flex-column">
               <h5 class="mb-0">23.000.000</h5>
-              <img src="img/icons8-gas-station-50.png" width="25px" height="25px"  style="margin-top: 15px">
-              <h5 class="mb-0">بنزین</h5>
               <img src="img/icons8-gearbox-32.png" width="25px" height="25px"  style="margin-top: 15px">
               <h5 class="mb-0">اتومات</h5>
               <img src="img/icons8-color-30.png" width="25px" height="25px"  style="margin-top: 15px">
               <h5 class="mb-0">سفید</h5>
             </div>
           </div>
-          <div class="d-flex flex-row justify-content-between p-3 mid">
-            <div class="d-flex flex-column">
-              <small class="text-muted mb-2" style="font-size: 20px">تردد مجاز</small>
-              <div class="d-flex flex-row">
-                <img src="https://imgur.com/J11mEBq.png">
-                <h6 class="ml-1">200کیلومتر</h6>
-              </div>
-            </div>
-          </div>
-          <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><button type="button" class="btn btn-danger btn-block" style="width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin';font-weight: bold" onClick="alert('در حال حاظر امکان رزرو وجود ندارد!')"><small >رزرو</small></button></div>
+          <div class="mx-3 mt-3 mb-2  d-flex justify-content-center"><button type="button" class="btn btn-danger btn-block" style="border: #d4af37;width: 200px; height: auto ; padding:15px 60px; border-radius:10px; background:#1e3a8a;font-size: 20px;font-family: 'B Nazanin';font-weight: bold" onClick="alert('در حال حاظر امکان رزرو وجود ندارد!')"><small >رزرو</small></button></div>
         </div>
       </div>
 	  </div>
@@ -324,58 +285,8 @@
 	<p style="text-align: center"><img style="border-radius: 20px" src="img/photo18278986558.jpg" width="250px" height="260px">&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-radius: 20px" src="img/photo18279048201.jpg" width="250px" height="260px">&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-radius: 20px" src="img/photo18279048321.jpg" width="250px" height="260px"></p>
 	<br><br><br>
 	
-	
-	<h3 style="text-align: center;font-size: 20px;font-weight: bold">سوالات متداول</h3>
-	
-	<h5 style="text-align: center;color: #1e3a8a;font-weight: bold">__________________</h5>
-	<br><br>
-	
-	
-	<div class="container">
-	<div class="row">
-	<div class="col-1"></div>	
-	<div class="col-5 text-black text-center p-3" style=" background-color: white; border: 4px solid #d4af37; border-radius: 20px; box-shadow: 5px 5px 16px rgba(0,0,0,1);font-family: 'B Nazanin'"><a onClick="alert('حداقل مدت‌زمان کرایه خودرو بدون راننده ۲ روز است؛ هرچقدر تعداد روز درخواستی شما بیشتر باشد شامل تخفیف می‌شود که این تخفیف‌ها از ۶ روز به بالا شروع می‌شود.')"  href="#" style="text-decoration: none"  >حداقل مدت زمان کرایه ماشین چقدر است؟</a></div>
-		&nbsp;
-		&nbsp;
-		&nbsp;
-		&nbsp;
-	<div class="col-5 text-black text-center p-3"  style=" background-color: white; border: 4px solid #d4af37; border-radius: 20px; box-shadow: 5px 5px 16px rgba(0,0,0,1);font-family: 'B Nazanin'"><a onClick="alert('برای سفر با خودرو اجاره‌ای هیچ‌گونه محدودیتی وجود ندارد و می‌توانید به هر شهری سفر کنید؛ اما نمی‌توانید با خودرو از کشور خارج شوید')"  href="#" style="text-decoration: none"  >اجاره خودرو برای رفتن به مسافرت و شهرهای دیگر محدودیت دارد؟</a></div>
-		<div class="col-1"></div>
-		</div><br>
-		
-	<div class="row">
-	<div class="col-1"></div>	
-	<div class="col-5 text-black text-center p-3" style=" background-color: white; border: 4px solid #d4af37; border-radius: 20px; box-shadow: 5px 5px 16px rgba(0,0,0,1);font-family: 'B Nazanin'"><a onClick="alert('بله، در صورت دریافت فاکتور رسمی برای اجاره ماشین بدون راننده و با راننده شامل ۱۰% مالیات بر ارزش افزوده خواهد شد.')"  href="#" style="text-decoration: none">ایا کرایه ماشین مشمول مایات می شود؟ </a></div>
-		&nbsp;
-		&nbsp;
-		&nbsp;
-		&nbsp;
-	<div class="col-5 text-black text-center p-3" style=" background-color: white; border: 4px solid #d4af37; border-radius: 20px; box-shadow: 5px 5px 16px rgba(0,0,0,1);font-family: 'B Nazanin';src: "><a onClick="alert(' کپی گواهینامه رانندگی + کپی کارت شناسایی + مدرک احراز شغلی + چک یا سفته به ارزش خودرو.')"  href="#" style="text-decoration: none">شرایط کرایه خودرو چیست؟ </a></div>
-		<div class="col-1"></div>
-		</div>
-	
-	<br>
-	<div class="row">
-	<div class="col-1"></div>	
-	<div class="col-5 text-black text-center p-3" style=" background-color: white; border: 4px solid #d4af37; border-radius: 20px; box-shadow: 5px 5px 16px rgba(0,0,0,1);font-family: 'B Nazanin'"><a onClick="alert('بله، درصورتی‌که بخواهید خودرو را در فرودگاه تحویل بگیرید، تنها کافی است که هنگام انجام رزرو آنلاین خود محل تحویل خودرو را فرودگاه انتخاب کنید.')"  href="#" style="text-decoration: none"  >امکان اجاره خودرو در فرودگاه وجود دارد؟</a></div>
-		&nbsp;
-		&nbsp;
-		&nbsp;
-		&nbsp;
-	<div class="col-5 text-black text-center p-3"  style=" background-color: white; border: 4px solid #d4af37; border-radius: 20px; box-shadow: 5px 5px 16px rgba(0,0,0,1);font-family: 'B Nazanin'"><a onClick="alert('بله، برای راحتی هرچه بیشتر شما عزیزان امکان پرداخت هزینهٔ اجاره خودرو با ریال، ارز و حتی ارز دیجیتال وجود دارد.')"  href="#" style="text-decoration: none"  >ایا امکان پرداخت هزینه با ارز وجود دارد؟</a></div>
-		<div class="col-1"></div>
-		</div>
-	
-	<br><br><br>
-			<h3 style="text-align: center;font-size: 20px;font-weight: bold">نمایندگی رنتو کار در شهر شما</h3>
-	
-	<h5 style="text-align: center;color: #1e3a8a;font-weight: bold">______________________________</h5>
-	<br><br>
-	<p style="text-align: center"><img style="border-radius: 20px" src="img/photo18258593144.jpg" alt="تهران" title="تهران" width="250px" height="260px">&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-radius: 20px" src="img/photo18258593432.jpg" alt="قم" title="قم" width="250px" height="260px">&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-radius: 20px" src="img/photo18258592019.jpg" alt="شیراز" title="شیراز" width="250px" height="260px"></p>
-		
-	<br><br>
 
-
+	
   <div class="container">
     <h2 class="mb-4">نظرات</h2>
     <div class="card mb-4">
@@ -423,7 +334,7 @@
       <div class="card mb-3">
         <div class="card-body">
           <div class="d-flex mb-3">
-            <img src="img/user_username_people_account_avatar_profile_person_icon_258962.png" class="rounded-circle me-3" alt="User Avatar">
+            <img src="img/icons8-user-50.png" class="rounded-circle me-3" alt="User Avatar">
             <div>
               <h5 class="card-title mb-0">رضا رضوی</h5>
               <small class="text-muted">5 فروردین 1403</small>
@@ -442,18 +353,27 @@
       </div>
     </div>
   </div>
-
-	</div>
+	
+	
+	
+<br><br><br>
+			<h3 style="text-align: center;font-size: 20px;font-weight: bold">نمایندگی رنتو کار در شهر شما</h3>
+	
+	<h5 style="text-align: center;color: #1e3a8a;font-weight: bold">______________________________</h5>
 	<br><br>
+	<p style="text-align: center"><img style="border-radius: 20px" src="img/photo18258593144.jpg" alt="تهران" title="تهران" width="250px" height="260px">&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-radius: 20px" src="img/photo18258593432.jpg" alt="قم" title="قم" width="250px" height="260px">&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-radius: 20px" src="img/photo18258592019.jpg" alt="شیراز" title="شیراز" width="250px" height="260px"></p>
+		
+	<br><br>
+	
 	<div class="footer-dark" style="width: 100%">
         <footer>
             <div class="container">
                 <div class="row"><div class="col-md-3 item">
     <h3>خدمات</h3>
     <ul>
-        <li><a href="#">اجاره ون</a></li>
-        <li><a href="#">اجاره ماشین عروس</a></li>
-        <li><a href="#">اجاره ماشین</a></li>
+        <li>اجاره ون</li>
+        <li>اجاره ماشین عروس</li>
+        <li>اجاره ماشین</li>
     </ul>
 </div><div class="col-md-3 item">
     <h3>ارتباط با ما</h3>
@@ -466,7 +386,7 @@
     <h3>درباره ما</h3>
     <ul>
         <li><a href="about.html">درباره رنتوکار</a></li>
-
+		 <li><a href="Questions.html">سوالات متداول</a></li>
     </ul>
 </div>
 <div class="col-md-3 item text">
@@ -481,7 +401,9 @@
 </div>
 
                     <div class="col item social">
-						<a href="#"><i class="fa fa-whatsapp"><img src="img/icons8-whatsapp-50.png" width="30px"></i></a><a href="#"><i class="fa fa-instagram"><img src="img/icons8-instagram-50.png"  width="30px"></i></a><a href="index.html"><i class="fa fa-google"><img src="img/icons8-google-50.png"  width="30px"></i></a></div>
+						<a href="https://wa.me/989123456789" target="_blank"><i class="fa fa-whatsapp"><img src="img/icons8-whatsapp-50.png" width="30px"></i></a>
+						<a href="https://www.instagram.com/YOUR_USERNAME" target="_blank"><i class="fa fa-instagram"><img src="img/icons8-instagram-50.png"  width="30px"></i></a>
+						<a href="index.html"><i class="fa fa-google"><img src="img/icons8-google-50.png"  width="30px"></i></a></div>
 					
                 </div>
 				
@@ -489,6 +411,10 @@
             </div>
         </footer>
 		</div>
+
+</body>
+</html>
+
 
 <script>
 function showAlert() {
@@ -500,8 +426,27 @@ function showAlert() {
  	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-</body>
-</html>
+    <script>
+        window.onscroll = function() {
+            var btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        document.getElementById("scrollTopBtn").addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
 
 
-
+   <script>
+       
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("loading").style.display = "none"; 
+                document.getElementById("content").style.display = "block"; 
+            }, 2000); 
+        };
+    </script>

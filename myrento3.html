@@ -6,6 +6,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 <link rel="shortcut icon" href="img/logo.png"/>
 	<link rel="stylesheet" href="css/myrento.css">
+<link rel="stylesheet" href="css/modalmyrento.css">
 
 </head>
 	
@@ -65,19 +66,33 @@
       <input type="text" class="input" >
     </div>
   </div><br>
-
-  
-
-  <div class="section_2"><a><button class="section2_btn btn55" type="button">ثبت</button></a></div>
-
 </form>
 
+<button class="section2_btn btn55" type="button" id="showConfirmationModal">ثبت</button>
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="custom-modal-dialog modal-dialog">
+        <div class="custom-modal-content modal-content">
+            <div class="custom-modal-header modal-header">
+                ثبت اطلاعات موفقیت‌آمیز بود!
+            </div>
+            <div class="custom-modal-body modal-body">
+                <p>اطلاعات شما با موفقیت ثبت شد. بررسی صحت مدارک و اطلاعات طی **۲۴ ساعت کاری** انجام می‌شود.</p>
+                <p>در صورت وجود هرگونه مشکل، پیامک اطلاع‌رسانی به شماره تلفن ثبت‌شده ارسال خواهد شد.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-blue" type="button" id="confirmBtn">تأیید</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+			
 </div>
 	</div>
 		</div>
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -85,4 +100,15 @@
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
     });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById("showConfirmationModal").addEventListener("click", function() {
+    var confirmationModal = new bootstrap.Modal(document.getElementById("confirmationModal"));
+    confirmationModal.show();
+});
+
+document.getElementById("confirmBtn").addEventListener("click", function() {
+    window.location.href = "index.html"; // انتقال به صفحه ایندکس
+});
 </script>
